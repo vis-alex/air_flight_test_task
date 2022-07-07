@@ -12,6 +12,11 @@ public class Segment {
     Segment(final LocalDateTime dep, final LocalDateTime arr) {
         departureDate = Objects.requireNonNull(dep);
         arrivalDate = Objects.requireNonNull(arr);
+
+        if (!departureDate.isBefore(arrivalDate)) {
+            throw new IllegalArgumentException(
+                    "Departure dateTime must be before arrival dateTime");
+        }
     }
 
     LocalDateTime getDepartureDate() {
