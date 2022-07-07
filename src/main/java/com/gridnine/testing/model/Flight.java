@@ -6,11 +6,11 @@ import java.util.stream.Collectors;
 public class Flight {
     private final List<Segment> segments;
 
-    Flight(final List<Segment> segments) {
+    public Flight(final List<Segment> segments) {
         this.segments = segments;
     }
 
-    List<Segment> getSegments() {
+    public List<Segment> getSegments() {
         return segments;
     }
 
