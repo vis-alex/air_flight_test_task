@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf3476f7-f260-47a2-93b3-0a0acb5a1d36" name="Changes" comment="Add test data" />
+    <list default="true" id="cf3476f7-f260-47a2-93b3-0a0acb5a1d36" name="Changes" comment="Add test data">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/gridnine/testing/filter/impl/FilterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FlightTestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_data/FlightTestData.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +18,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
+        <option value="JUnit3 Test Class" />
+        <option value="JUnit4 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -32,31 +40,116 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3": "junit.framework.TestCase",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": ""
   }
-}</component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.gridnine.testing.Main" />
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+      <recent name="junit.framework.TestCase" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.gridnine.testing.filter.impl" />
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.gridnine.testing.filter.impl" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.FilterTest.applyMultipleFilters">
+    <configuration name="ArrivalBeforeDepartureFilterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="air_flights_app" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.gridnine.testing.*" />
+          <option name="PATTERN" value="com.gridnine.testing.filter.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.gridnine.testing.filter.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.gridnine.testing.filter.impl.ArrivalBeforeDepartureFilterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrivalBeforeDepartureFilterTest.filter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="air_flights_app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gridnine.testing.filter.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gridnine.testing.filter.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.gridnine.testing.filter.impl.ArrivalBeforeDepartureFilterTest" />
+      <option name="METHOD_NAME" value="filter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DepartureBeforeNowFilterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="air_flights_app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gridnine.testing.filter.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gridnine.testing.filter.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.gridnine.testing.filter.impl.DepartureBeforeNowFilterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FilterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="air_flights_app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gridnine.testing.filter.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gridnine.testing.filter.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.gridnine.testing.filter.impl.FilterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FilterTest.applyMultipleFilters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="air_flights_app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gridnine.testing.filter.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gridnine.testing.filter.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.gridnine.testing.filter.impl.FilterTest" />
+      <option name="METHOD_NAME" value="applyMultipleFilters" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.FilterTest.applyMultipleFilters" />
+        <item itemvalue="JUnit.FilterTest" />
+        <item itemvalue="JUnit.ArrivalBeforeDepartureFilterTest.filter" />
+        <item itemvalue="JUnit.ArrivalBeforeDepartureFilterTest" />
+        <item itemvalue="JUnit.DepartureBeforeNowFilterTest" />
       </list>
     </recent_temporary>
   </component>
@@ -112,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657281746242</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add test data">
+      <created>1657303141215</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1657303141215</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +236,7 @@
     <MESSAGE value="Add MoreThanTwoHoursBetweenArrivalAndDepartureFilter impl" />
     <MESSAGE value="Add DepartureBeforeNowFilter impl" />
     <MESSAGE value="Change filter functionality to multi filter functionality by using Strategy pattern." />
-    <option name="LAST_COMMIT_MESSAGE" value="Change filter functionality to multi filter functionality by using Strategy pattern." />
+    <MESSAGE value="Add test data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add test data" />
   </component>
 </project>
