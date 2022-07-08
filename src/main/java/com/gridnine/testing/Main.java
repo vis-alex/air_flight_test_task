@@ -23,7 +23,7 @@ public class Main {
         flightCombineFilter.setFlights(flights);
 
         System.out.println(
-                "Unfiltered flights: " + flights.size() +
+                "Size of not filtered Flights: " + flights.size() +
                         "\n"  + flights + "\n"
         );
 
@@ -52,34 +52,34 @@ public class Main {
         flightCombineFilter.removeFilter(moreThanTwoHoursFilter);
 
 
-        //Second, simpler variant, without multiple filters
+//        Second, simpler variant, without multiple filters
 
 //        Filter filter;
 //        List<Flight> filteredFlights;
 //        List<Flight> flights =  FlightBuilder.createFlights();
 //        System.out.println(
-//                "Unfiltered flights: " + flights.size() +
+//                "Size of not filtered flights: " + flights.size() +
 //                        "\n" + "Flights list: " + flights + "\n"
 //        );
 ////
 //        filter = new ArrivalBeforeDepartureFilter();
 //        filteredFlights = filter.filter(flights);
 //        System.out.println(
-//                "Flights filtered by ArrivalBeforeDepartureFilter: " + filteredFlights.size() +
+//                "Size of Flights list filtered by ArrivalBeforeDepartureFilter: " + filteredFlights.size() +
 //                        "\n" + "Flights list: " + filteredFlights + "\n"
 //        );
 //
 //        filter = new MoreThanTwoHoursBetweenArrivalAndDepartureFilter();
 //        filteredFlights = filter.filter(flights);
 //        System.out.println(
-//                "Flights filtered by MoreThanTwoHoursBetweenArrivalAndDepartureFilter: " + filteredFlights.size() +
+//                "Size of Flights list filtered by MoreThanTwoHoursBetweenArrivalAndDepartureFilter: " + filteredFlights.size() +
 //                        "\n" + "Flights list: " + filteredFlights + "\n"
 //        );
 //
 //        filter = new DepartureBeforeNowFilter();
 //        filteredFlights = filter.filter(flights);
 //        System.out.println(
-//                "Flights filtered by DepartureBeforeNowFilter: " + filteredFlights.size() +
+//                "Size of Flights list filtered by DepartureBeforeNowFilter: " + filteredFlights.size() +
 //                        "\n" + "Flights list: " + filteredFlights + "\n"
 //        );
     }
