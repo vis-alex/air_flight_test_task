@@ -2,6 +2,7 @@ package com.gridnine.testing;
 
 import com.gridnine.testing.filter.Filter;
 import com.gridnine.testing.filter.impl.ArrivalBeforeDepartureFilter;
+import com.gridnine.testing.filter.impl.DepartureBeforeNowFilter;
 import com.gridnine.testing.filter.impl.MoreThanTwoHoursBetweenArrivalAndDepartureFilter;
 import com.gridnine.testing.model.Flight;
 
@@ -16,16 +17,22 @@ public class Main {
                 "Unfiltered flights: " + flights.size()
         );
 
-//        filter = new ArrivalBeforeDepartureFilter();
-//        filteredFlights = filter.filter(flights);
-//        System.out.println(
-//                "Flights filtered by ArrivalBeforeDepartureFilter: " + filteredFlights.size()
-//        );
+        filter = new ArrivalBeforeDepartureFilter();
+        filteredFlights = filter.filter(flights);
+        System.out.println(
+                "Flights filtered by ArrivalBeforeDepartureFilter: " + filteredFlights.size()
+        );
 
         filter = new MoreThanTwoHoursBetweenArrivalAndDepartureFilter();
         filteredFlights = filter.filter(flights);
         System.out.println(
                 "Flights filtered by MoreThanTwoHoursBetweenArrivalAndNextDepartureFilter: " + filteredFlights.size()
+        );
+
+        filter = new DepartureBeforeNowFilter();
+        filteredFlights = filter.filter(flights);
+        System.out.println(
+                "Flights filtered by DepartureBeforeNowFilter: " + filteredFlights.size()
         );
     }
 }
