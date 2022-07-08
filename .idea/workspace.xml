@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf3476f7-f260-47a2-93b3-0a0acb5a1d36" name="Changes" comment="Add MoreThanTwoHoursBetweenArrivalAndDepartureFilter impl">
+    <list default="true" id="cf3476f7-f260-47a2-93b3-0a0acb5a1d36" name="Changes" comment="Add DepartureBeforeNowFilter impl">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/filter/FlightCombineFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/filter/impl/ArrivalBeforeDepartureFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/filter/impl/ArrivalBeforeDepartureFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/filter/impl/DepartureBeforeNowFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/filter/impl/DepartureBeforeNowFilter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657277531159</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add DepartureBeforeNowFilter impl">
+      <created>1657278886215</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1657278886215</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +131,7 @@
     <MESSAGE value="Add Flight model" />
     <MESSAGE value="Add FlightBuilder factory.  &#10;Add date validation in Segment constructor." />
     <MESSAGE value="Add MoreThanTwoHoursBetweenArrivalAndDepartureFilter impl" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add MoreThanTwoHoursBetweenArrivalAndDepartureFilter impl" />
+    <MESSAGE value="Add DepartureBeforeNowFilter impl" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add DepartureBeforeNowFilter impl" />
   </component>
 </project>
