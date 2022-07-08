@@ -16,7 +16,7 @@ public class Flight {
 
     @Override
     public String toString() {
-        return segments.stream().map(Object::toString)
+        return "Flight: " + segments.stream().map(Object::toString)
                 .collect(Collectors.joining(" "));
     }
 }

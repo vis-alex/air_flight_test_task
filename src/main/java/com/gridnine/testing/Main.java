@@ -24,30 +24,30 @@ public class Main {
 
         System.out.println(
                 "Unfiltered flights: " + flights.size() +
-                        "\n" + "Flights list: " + flights + "\n"
+                        "\n"  + flights + "\n"
         );
 
         flightCombineFilter.addFilter(arrivalBeforeDepartureFilter);
         filteredFlights = flightCombineFilter.applyFilters();
         System.out.println(
-                "Flights filtered by ArrivalBeforeDepartureFilter: " + filteredFlights.size() +
-                        "\n" + "Flights list: " + filteredFlights + "\n"
+                "Size of Flights list filtered by ArrivalBeforeDepartureFilter: " + filteredFlights.size() +
+                        "\n"  + filteredFlights + "\n"
         );
         flightCombineFilter.removeFilter(arrivalBeforeDepartureFilter);
 
         flightCombineFilter.addFilter(departureBeforeNowFilter);
         filteredFlights = flightCombineFilter.applyFilters();
         System.out.println(
-                "Flights filtered by DepartureBeforeNowFilter: " + filteredFlights.size() +
-                        "\n" + "Flights list: " + filteredFlights + "\n"
+                "Size of Flights list filtered by DepartureBeforeNowFilter: " + filteredFlights.size() +
+                        "\n"  + filteredFlights + "\n"
         );
         flightCombineFilter.removeFilter(departureBeforeNowFilter);
 
         flightCombineFilter.addFilter(moreThanTwoHoursFilter);
         filteredFlights = flightCombineFilter.applyFilters();
         System.out.println(
-                "Flights filtered by MoreThanTwoHoursBetweenArrivalAndDepartureFilter: " + filteredFlights.size() +
-                        "\n" + "Flights list: " + filteredFlights + "\n"
+                "Size of Flights list filtered by MoreThanTwoHoursBetweenArrivalAndDepartureFilter: " + filteredFlights.size() +
+                        "\n"  + filteredFlights + "\n"
         );
         flightCombineFilter.removeFilter(moreThanTwoHoursFilter);
 
