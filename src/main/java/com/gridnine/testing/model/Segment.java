@@ -4,6 +4,12 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Objects;
 
+/**
+ * @author Alexand Usenko
+ * @version 1.0
+ * @since 1.0
+ * Model for entity Segment which contains departure and arrival dates of flight`s segment
+ * */
 public class Segment {
     private final LocalDateTime departureDate;
 

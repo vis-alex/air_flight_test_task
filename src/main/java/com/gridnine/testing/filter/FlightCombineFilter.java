@@ -5,6 +5,13 @@ import com.gridnine.testing.model.Flight;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author Alexand Usenko
+ * @version 1.0
+ * @since 1.0
+ * Pattern Strategy implementation for multi-usage filters {@link Filter} on list of {@link Flight}
+ * For correct working filters and flights are transmitted from outside
+ * */
 public class FlightCombineFilter {
     private List<Filter> filters = new ArrayList<>();
     private List<Flight> flights = new ArrayList<>();
@@ -33,6 +40,11 @@ public class FlightCombineFilter {
         this.filters = filters;
     }
 
+    /**
+     * This method applies all filters from the {@link FlightCombineFilter#filters}
+     * to the {@link FlightCombineFilter#flights} in turn
+     * @return filtered list of {@link Flight}
+     * */
     public List<Flight> applyFilters() {
         List<Flight> result = new ArrayList<>(flights);
 

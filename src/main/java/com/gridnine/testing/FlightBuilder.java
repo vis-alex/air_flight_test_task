@@ -8,7 +8,18 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+
+/**
+ * @author Alexand Usenko
+ * @version 1.0
+ * @since 1.0
+ * Factory class producing list of {@link Flight} for testing purposes
+ * */
 public class FlightBuilder {
+
+    /**
+     * This method generate new list of {@link Flight}
+     * */
     public static List<Flight> createFlights() {
         LocalDateTime threeDaysFromNow = LocalDateTime.now().plusDays(3);
         return Arrays.asList(
@@ -36,6 +47,11 @@ public class FlightBuilder {
                 ));
     }
 
+    /**
+     * This method create new entity {@link Flight}.
+     * @param dates - varargs of LocalDateTime. Should be even number of dates for correct creating list of {@link Segment}.
+     * @return new entity {@link Flight}
+     * */
     private static Flight createFlight(final LocalDateTime... dates) {
         if ((dates.length % 2) != 0) {
             throw new IllegalArgumentException(
