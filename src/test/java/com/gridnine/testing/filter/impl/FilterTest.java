@@ -17,8 +17,7 @@ public class FilterTest {
 
     @Before
     public void setUp() throws Exception {
-        combineFilter = new FlightCombineFilter();
-        combineFilter.setFlights(FLIGHTS);
+        combineFilter = new FlightCombineFilter(FLIGHTS);
     }
 
     @Test
@@ -50,9 +49,7 @@ public class FilterTest {
 
     @Test
     public void applyMultipleFilters() {
-        combineFilter.addFilter(MORE_THAN_TWO_HOURS_FILTER);
-        combineFilter.addFilter(DEPARTURE_BEFORE_NOW_FILTER);
-        combineFilter.addFilter(ARRIVAL_BEFORE_DEPARTURE_FILTER);
+        combineFilter.setFilters(ARRIVAL_BEFORE_DEPARTURE_FILTER, DEPARTURE_BEFORE_NOW_FILTER, MORE_THAN_TWO_HOURS_FILTER);
         List<Flight> actualFlights = combineFilter.applyFilters();
 
         assertEquals(2, actualFlights.size());

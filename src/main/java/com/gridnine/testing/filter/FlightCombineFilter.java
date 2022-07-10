@@ -3,6 +3,7 @@ package com.gridnine.testing.filter;
 import com.gridnine.testing.model.Flight;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -14,12 +15,32 @@ import java.util.List;
  * */
 public class FlightCombineFilter {
     private List<Filter> filters = new ArrayList<>();
-    private List<Flight> flights = new ArrayList<>();
+    private List<Flight> flights;
 
+    public FlightCombineFilter(List<Flight> flights) {
+        this.flights = flights;
+    }
+
+    public FlightCombineFilter(List<Filter> filters, List<Flight> flights) {
+        this.filters = filters;
+        this.flights = flights;
+    }
+
+    public FlightCombineFilter(List<Filter> filters, Flight ... flights) {
+        this.filters = filters;
+        this.flights = Arrays.asList(flights);
+    }
+
+    /**
+     * Add single filter
+     * */
     public void addFilter(Filter filter) {
         filters.add(filter);
     }
 
+    /**
+     * Remove single filter
+     * */
     public void removeFilter(Filter filter) {
         filters.remove(filter);
     }
@@ -38,6 +59,10 @@ public class FlightCombineFilter {
 
     public void setFilters(List<Filter> filters) {
         this.filters = filters;
+    }
+
+    public void setFilters(Filter ... filters) {
+        this.filters = Arrays.asList(filters);
     }
 
     /**

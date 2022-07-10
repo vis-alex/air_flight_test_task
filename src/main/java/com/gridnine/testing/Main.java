@@ -19,8 +19,7 @@ public class Main {
         List<Flight> flights = FlightBuilder.createFlights();
         List<Flight> filteredFlights;
 
-        FlightCombineFilter flightCombineFilter = new FlightCombineFilter();
-        flightCombineFilter.setFlights(flights);
+        FlightCombineFilter flightCombineFilter = new FlightCombineFilter(flights);
 
         System.out.println(
                 "Size of not filtered Flights: " + flights.size() +
